@@ -11,10 +11,26 @@ files in local folder docker_local this project
 
 docker-compose up -d   
 
+for execute need insert scritps in BD postgres
+files in local folder SQL
+
+
+
 
 exec call for payment bolet and call after anys secontes for check status update for paic out
 
 localhost:8765 is my optional gateway 
+
+
+
+
+need Authorization token for it call curland get token response add in next curl how new token 
+curl --location --request POST 'http://localhost:8765/resell-oauth/oauth/token' \
+--header 'Authorization: Basic QVBJX05BTUVfQUNDRVNTOkFQSV9TRUNSRVRfQUNDRVNT' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'username=nina@gmail.com' \
+--data-urlencode 'password=123456' \
+--data-urlencode 'grant_type=password'
 
 
 curl --location --request POST 'http://localhost:8765/resell-person/billet/payment' \
