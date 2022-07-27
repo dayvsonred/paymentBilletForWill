@@ -40,3 +40,12 @@ curl --location --request POST 'http://localhost:8765/resell-person/billet/payme
     "amount": 12000,
     "barCode": "826500000011323116990009002022153320470000001062"
 }'
+
+
+when calling the payment of the boleto for the first time it will be saved and prepared to be processed in the bank
+
+then the micro service will process the payment if the customer has a balance and change the status to paid out
+
+so check the status of the ticket by the barcode
+
+
