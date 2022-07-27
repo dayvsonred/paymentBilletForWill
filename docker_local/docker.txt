@@ -1,0 +1,12 @@
+
+
+ up container
+
+
+docker-compose up -d   
+
+
+
+
+
+
